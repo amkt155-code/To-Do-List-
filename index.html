@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Study Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+<h1>🌸 Study Planner</h1>
+<p>今日もがんばろう！</p>
+</div>
+
+<div class="taskInput">
+
+<input id="task" placeholder="勉強タスクを書く">
+
+<select id="subject">
+<option>英語</option>
+<option>数学</option>
+<option>中国語</option>
+<option>その他</option>
+</select>
+
+<button onclick="addTask()">＋追加</button>
+
+</div>
+
+<ul id="list"></ul>
+
+<div class="timerArea">
+
+<h2>⏱ Study Timer</h2>
+
+<div id="timer">25:00</div>
+
+<button onclick="startTimer()">START</button>
+<button onclick="resetTimer()">RESET</button>
+
+</div>
+
+<div class="progressArea">
+
+<h2>📊 今日の進捗</h2>
+
+<div class="progressBar">
+<div id="progress"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
